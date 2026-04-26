@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Contact Eminence VA Solutions</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="contact-page">
+
+<nav id="mainNav" class="scrolled">
+  <a href="index.html" class="nav-logo">
+    <img src="assets/imgs/logo.webp" alt="Eminence VA Solutions" class="nav-logo-image"/>
+  </a>
+  <div class="nav-links">
+    <a href="index.html#services">Services</a>
+    <a href="index.html#offers">Offers</a>
+    <a href="index.html#how">How It Works</a>
+    <a href="index.html#reviews">Reviews</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <a href="#contactFormSection" class="nav-cta nav-cta-desktop">Book a Free Call</a>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html#services">Services</a>
+  <a href="index.html#offers">Offers</a>
+  <a href="index.html#how">How It Works</a>
+  <a href="index.html#reviews">Reviews</a>
+  <a href="contact.html">Contact</a>
+  <a href="#contactFormSection" class="nav-cta">Book a Free Call</a>
+</div>
+
+<section class="contact-hero">
+  <div class="contact-hero-wrap">
+    <div class="contact-hero-copy fade-up">
+      <h1 class="contact-title">Let's Build Your <em>Support System</em> Together</h1>
+      <p class="contact-sub">Tell us where your team is getting stretched, what kind of virtual assistant support you need, and how quickly you want to get moving. We'll help you map out the right next step for your workflow.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact-main" id="contactFormSection">
+  <div class="contact-form-card fade-up">
+    <div class="contact-form-head">
+      <h2>Send us a message</h2>
+      <p>Fill this out with a few details about your business and support needs. Locally, this form opens an email draft to <a href="mailto:support@eminencevasolutions.com" style="color:var(--gold3);text-decoration:none">support@eminencevasolutions.com</a> with your message pre-filled.</p>
+    </div>
+
+    <form id="contactForm">
+      <div class="contact-form-grid">
+        <div class="contact-field contact-field-full">
+          <label for="name">Full Name *</label>
+          <input id="name" name="name" type="text" placeholder="John Doe" required/>
+        </div>
+        <div class="contact-field contact-field-full">
+          <label for="email">Email *</label>
+          <input id="email" name="email" type="email" placeholder="john@example.com" required/>
+        </div>
+        <div class="contact-field">
+          <label for="company">Company Name</label>
+          <input id="company" name="company" type="text" placeholder="Your company or team"/>
+        </div>
+        <div class="contact-field">
+          <label for="service">Support Needed</label>
+          <select id="service" name="service">
+            <option value="">Choose a service</option>
+            <option>Executive / Administrative Support</option>
+            <option>Customer Service Support</option>
+            <option>Legal Intake / Admin Support</option>
+            <option>Real Estate Support</option>
+            <option>CRM / Lead Follow-up</option>
+            <option>Bilingual English / Spanish Support</option>
+            <option>Custom VA Support</option>
+          </select>
+        </div>
+        <div class="contact-field contact-field-full">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" placeholder="Tell us about your business needs..." required></textarea>
+        </div>
+      </div>
+
+      <div class="contact-form-actions">
+        <button type="submit" class="btn-gold contact-submit">Send Message</button>
+      </div>
+      <div class="contact-form-note">This opens your default email app with your message already filled in.</div>
+      <p id="contactStatus" class="contact-status" aria-live="polite"></p>
+    </form>
+  </div>
+
+  <div class="contact-side">
+    <div class="contact-side-copy fade-up" style="transition-delay:.08s">
+      <h2 class="contact-connect-title">Let's <em>Connect</em></h2>
+      <p class="contact-connect-sub">Whether you're exploring support options, trying to clean up daily operations, or preparing to delegate more confidently, we're here to answer questions and help you figure out the right next move.</p>
+    </div>
+
+    <div class="contact-side-card fade-up" style="transition-delay:.12s">
+      <div class="contact-list">
+        <div class="contact-list-item">
+          <span>Email</span>
+          <a href="mailto:support@eminencevasolutions.com">support@eminencevasolutions.com</a>
+          <p>Best for consultation requests, service questions, and onboarding conversations.</p>
+        </div>
+        <div class="contact-list-item">
+          <span>Primary Markets</span>
+          <strong>United States &amp; Canada</strong>
+          <p>Built for founders, agencies, legal teams, funding firms, and high-trust industries.</p>
+        </div>
+        <div class="contact-list-item">
+          <span>Response Window</span>
+          <strong>Usually within 1 business day</strong>
+          <p>Share the urgency in your message and we'll prioritize the right next step.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-side-card contact-follow-card fade-up" style="transition-delay:.18s">
+      <h3>Need more context first?</h3>
+      <p>You can review our services, daily support outcomes, and onboarding process before reaching out.</p>
+      <a href="index.html" class="contact-back-home">Back to Home</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo">
+        <img src="assets/imgs/logo.webp" alt="Eminence VA Solutions" class="footer-logo-image"/>
+      </a>
+      <p class="footer-desc">Elite virtual assistant support for founders, agencies, and high-trust industries that need reliable execution, cleaner systems, and faster delegation.</p>
+      <div class="footer-contact-item">Email: <a href="mailto:support@eminencevasolutions.com">support@eminencevasolutions.com</a></div>
+      <div class="footer-contact-item" style="margin-top:4px">Website: <a href="https://eminencevasolutions.com" target="_blank">eminencevasolutions.com</a></div>
+    </div>
+    <div class="footer-col">
+      <h5>Services</h5>
+      <ul>
+        <li><a href="index.html#services">Law Firm Support</a></li>
+        <li><a href="index.html#services">Credit Repair Support</a></li>
+        <li><a href="index.html#services">Business Funding Support</a></li>
+        <li><a href="index.html#services">Real Estate Support</a></li>
+        <li><a href="index.html#services">Bilingual VA Support</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="index.html#offers">What Gets Done</a></li>
+        <li><a href="index.html#how">How It Works</a></li>
+        <li><a href="index.html#reviews">Client Reviews</a></li>
+        <li><a href="contact.html">Free Consultation</a></li>
+        <li><a href="mailto:support@eminencevasolutions.com">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Resources</h5>
+      <ul>
+        <li><a href="index.html#services">Industries We Serve</a></li>
+        <li><a href="index.html#offers">Daily Output Examples</a></li>
+        <li><a href="index.html#how">Onboarding Process</a></li>
+        <li><a href="contact.html">Strategy Call</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">&#169; 2024 Eminence VA Solutions. All rights reserved.</div>
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -47,3 +47,38 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     }
   });
 });
+
+// Local contact form helper
+const contactForm = document.getElementById('contactForm');
+const contactStatus = document.getElementById('contactStatus');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(contactForm);
+    const name = (formData.get('name') || '').toString().trim();
+    const email = (formData.get('email') || '').toString().trim();
+    const company = (formData.get('company') || '').toString().trim();
+    const service = (formData.get('service') || '').toString().trim();
+    const message = (formData.get('message') || '').toString().trim();
+
+    const subject = `Consultation Request - ${name || 'Website Inquiry'}`;
+    const body = [
+      `Name: ${name}`,
+      `Email: ${email}`,
+      `Company: ${company || 'Not provided'}`,
+      `Service Needed: ${service || 'Not selected'}`,
+      '',
+      'Project Details:',
+      message || 'No message provided.'
+    ].join('\n');
+
+    const mailtoLink = `mailto:support@eminencevasolutions.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
+
+    if (contactStatus) {
+      contactStatus.textContent = 'Your email draft is ready. Review it and send when you are ready.';
+    }
+  });
+}
