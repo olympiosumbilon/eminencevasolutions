@@ -75,6 +75,7 @@ nav.scrolled {
   gap: 10px;
   text-decoration: none;
   flex-shrink: 0;
+  justify-self: start;
 }
 
 .nav-logo-image {
@@ -86,6 +87,9 @@ nav.scrolled {
 }
 
 .nav-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   align-items: center;
   gap: 32px;
@@ -135,6 +139,7 @@ nav.scrolled {
   gap: 5px;
   cursor: pointer;
   padding: 4px;
+  margin-left: auto;
 }
 
 .hamburger span {
@@ -1472,6 +1477,10 @@ footer {
   }
 
   .nav-links {
+    display: none;
+  }
+
+  .nav-cta-desktop {
     display: none;
   }
 
